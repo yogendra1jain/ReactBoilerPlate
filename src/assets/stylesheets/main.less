@@ -1,0 +1,2678 @@
+// Color Set 3
+@primary : #0c2f35;
+@primary-l: #204f5f;
+@primary-d: #0f8fad;
+@primary-text: #ffffff;
+@primary-text-l: #ffffff;
+
+@secondary: #668ad8;
+@secondary-l: #03afce;
+@secondary-d: #267b8a;
+@secondary-text: #fff;
+@secondary-text-l: #fff;
+
+@soft-text: rgba(0, 0, 0, 0.8);
+@softer-text: rgba(0, 0, 0, 0.5);
+
+@background: #f9f9f9;
+@background-l: #EEEEEE;
+@background-white: #fff;
+// // Color Set 1
+// @primary : #0caeca;
+// @primary-l: #62727b;
+// @primary-d: #0f8fad;
+// @primary-text: #ffffff;
+
+// @secondary: #e91e63;
+// @secondary-l: #ff6090;
+// @secondary-d: #b0003a;
+// @secondary-text: #000000;
+
+// @soft-text: rgba(0, 0, 0, 0.8);
+// @softer-text: rgba(0, 0, 0, 0.5);
+
+// @background: #f9f9f9;
+// @background-l: #EEEEEE;
+// @background-white: #fff;
+
+// Color Set 2 
+// @primary : #2196f3;
+// @primary-l: #6ec6ff;
+// @primary-d: #0069c0;
+// @primary-text: #000000;
+
+// @secondary: #ffab00;
+// @secondary-l: #ffdd4b;
+// @secondary-d: #c67c00;
+// @secondary-text: #000000;
+
+// @soft-text: rgba(0, 0, 0, 0.8);
+// @softer-text: rgba(0, 0, 0, 0.5);
+
+// @background: #f9f9f9;
+// @background-l: #EEEEEE;
+// @background-white: #fff;
+
+/* Generic Styles */
+
+body {
+    font-family: 'Karla', sans-serif !important;
+    margin: 0;
+    background-color: @background-white;
+    color: rgba(0, 0, 0, 0.87) !important;
+    overflow: hidden;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px @background-white inset !important;
+
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+input,
+textarea,
+select form {
+    font-family: 'Karla', sans-serif !important;
+    font-size: 1.1rem !important;
+}
+
+.boxshadownone {
+    box-shadow: none !important;
+}
+
+.master input {
+    padding: 8px 0 9px;
+}
+
+.d-block {
+    display: block;
+}
+
+.title-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.MuiFormControl-marginNormal-3 // Consult Vishnu Ji
+
+.legal-images-container {
+    width: 30%;
+}
+
+.legal-images {
+    width: 100%;
+}
+
+// To be removed
+
+label,
+p {
+    font-size: 1rem !important;
+    font-family: 'Karla', sans-serif !important;
+}
+
+.fwidth {
+    width: 100%;
+}
+
+.fheight {
+    height: 100%;
+}
+
+.halfwidth {
+    width: 50%;
+}
+
+.halfheight {
+    height: 50%;
+}
+
+/* Global */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.width-100-percent {
+    width: 100%;
+}
+
+.align-center {
+    align-items: center
+}
+.align-self-center{
+    align-self: center
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-self-center{
+    justify-self: center
+}
+.justify-space-between {
+    justify-content: space-between
+}
+
+.justify-space-around {
+    justify-content: space-around
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+.align-flex-end{
+    align-items: flex-end;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.overflow-x {
+    overflow-x: auto;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.master h1 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    font-family: 'Karla', sans-serif !important;
+    margin-bottom: 0;
+}
+
+.none {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.m-50 {
+    margin: 50px !important;
+}
+
+.ml-10 {
+    margin-left: 10px !important;
+}
+
+.m-10 {
+    margin: 10px !important;
+}
+
+.ml-35 {
+    margin-left: 35px !important;
+}
+
+.ml-20 {
+    margin-left: 20px !important;
+}
+
+.pad-10 {
+    padding: 10px !important;
+}
+
+.pad-20 {
+    padding: 20px !important;
+}
+
+.mr-20 {
+    margin-right: 20px !important;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.no-pad {
+    padding: 0 !important;
+}
+
+.no-marg {
+    margin: 0 !important;
+}
+
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.pt-10 {
+    padding-top: 10px !important;
+}
+
+.pl-5 {
+    padding-left: 5px !important;
+}
+
+.pr-5 {
+    padding-right: 5px !important;
+}
+
+.pl-10 {
+    padding-left: 10px !important;
+}
+.pl-20 {
+    padding-left: 20px !important;
+}
+
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.pb-15 {
+    padding-bottom: 15px !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.pb-30 {
+    padding-bottom: 30px !important;
+}
+
+.pb-60 {
+    padding-bottom: 6rem !important;
+}
+
+.pt-60 {
+    padding-top: 6rem !important;
+}
+
+.pt-30 {
+    padding-top: 3rem !important;
+}
+
+.pt-40 {
+    padding-top: 4rem !important;
+}
+
+.pt-20 {
+    padding-top: 2rem !important;
+}
+
+.pt-78 {
+    padding-top: 7.8rem !important;
+}
+
+.mb-20 {
+    margin-bottom: 2rem !important;
+}
+
+.mb-50 {
+    margin-bottom: 5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mb-10 {
+    margin-bottom: 1rem !important;
+}
+.mbottom-10{
+    margin-bottom: 10px !important;
+
+}
+
+.mtrb-12 {
+    margin: 1.2rem;
+    margin-left: 0;
+}
+
+.disable-button {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.ul-style-remove {
+    list-style-type: none;
+}
+
+/* Material UI changes */
+
+.main {
+    .MuiButtonBase-root-58 {
+        height: 60px;
+    }
+
+    .MuiTab-root-72 {
+        height: 60px;
+    }
+}
+
+.text-titlehead {
+    opacity: 0.7;
+    font-size: 0.85em;
+}
+
+
+.btnmodalprimary {
+    background-color: #0f8fad !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 1) !important;
+    padding: 10px 30px !important;
+    font-size: .87rem !important;
+}
+
+.btnmodalsecondary {
+    background-color: #444343 !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 1) !important;
+    padding: 10px 30px !important;
+    font-size: .87rem !important;
+}
+
+.MuiDialog-paper {
+    min-width: 500px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.no-product-found {
+    display: flex;
+    align-items: center;
+    margin-left: 260px;
+}
+
+/* --------------- Main Styles --------------- */
+
+/* Login Styles */
+
+
+/* Home Styles */
+.full-screen-button {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    background: #fff;
+    border-radius: 100px;
+    z-index: 1500;
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.MuiDrawer-root {
+    z-index: 1700 !important;
+}
+
+.sidedrawer-user-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: @softer-text;
+    padding-top: 5px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.drawer-parent {
+    .MuiDrawer-paper {
+        justify-content: space-between;
+    }
+}
+
+.pos-body {
+    display: flex;
+    background: @background;
+}
+
+.toast-area {
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+
+    .offline-indicator {
+        padding: 10px 30px;
+        border-radius: 20px;
+        background: rgba(226, 22, 22, 0.6);
+        color: white;
+    }
+}
+
+.page-no {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.MuiSnackbarContent-message {
+    width: 100%;
+}
+
+.MuiSnackbar-root {
+    z-index: 2000 !important;
+}
+
+.MuiSnackbarContent-root {
+    width: 25%;
+}
+
+.cart-snackbar {
+    width: 100%;
+
+    .product-img {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .product-name {
+        width: 60%;
+    }
+
+    .product-price {
+        width: 25%
+    }
+}
+
+// Numpad
+.numpad-global {
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+
+    .numpad-card {
+        background: @primary;
+        color: @primary-text;
+        border-radius: 8px;
+        padding: 10px;
+
+        .card-title {}
+
+        .key {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            font-size: 1.3em;
+        }
+
+        .big-key {
+            width: 59%;
+            margin: 1%;
+        }
+
+        .small-key {
+            width: 28%;
+            margin: 1%;
+        }
+    }
+}
+
+.pos-products-collection {
+    border-right: solid 2px #c3c3c3;
+
+    .MuiPaper-rounded {
+        border-radius: 0;
+    }
+
+    //width: 60%;
+    .pos-header {
+        width: 100%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        .header-top {
+            background: @primary;
+            width: auto;
+            display: flex;
+            align-items: center;
+            height: 70px;
+
+            .header-right-sec {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        border-left: solid 1px #d4d4d4;
+                        background: @secondary-l;
+                        height: 70px;
+                        padding: 0 10px;
+                        line-height: 70px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .breadcrumbs {
+        width: 100%;
+        height: 35%;
+        background: @primary-l;
+    }
+
+    .product-catogories {
+        // margin: 10px 0;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-right: 2px solid #c1c1c1;
+
+        .each-tile {
+            min-height: 45px;
+            height: 45px;
+        }
+
+        .category-text {
+            font-size: 16px;
+            margin: 0 auto;
+            align-self: center;
+        }
+    }
+
+    .each-tile {
+        position: relative;
+        width: 31%;
+        min-width: 28%;
+        border-radius: 4px;
+        margin: 1%;
+        // padding: 10px;
+        min-height: 50px;
+        height: 120px;
+        //max-height: fit-content;
+        display: flex;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        .product-image {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 4px 0 0 4px;
+
+            img {
+                width: 200%;
+            }
+        }
+
+        .product-info {
+            width: 69%;
+            padding: 3%;
+        }
+    }
+
+    .blue-background {
+        background: @primary-d;
+        color: @primary-text;
+    }
+
+    .white-background {
+        background: @background-white;
+        color: @secondary-text;
+    }
+
+    .pos-products {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        align-content: flex-start;
+
+        .loading-text {
+            font-size: 1.4em;
+            color: @soft-text;
+            padding-left: 15px;
+        }
+
+        .truncate {
+            width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .added-item-position {
+            top: 0;
+            left: 0;
+        }
+
+        .added-item-count {
+            background: @primary-l;
+            border-radius: 4px 0 10px 0;
+            padding: 10px;
+            color: @primary-text;
+        }
+
+        .each-card-name {
+            font-size: 0.9em;
+            color: @soft-text;
+        }
+
+        .each-card-code-head {
+            font-size: 0.7em;
+            color: @soft-text;
+        }
+
+        .each-card-code {
+            font-size: 0.8em;
+            color: @soft-text;
+        }
+
+        .each-card-price {
+            padding-top: 30px;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+        }
+
+        .each-card-more {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .each-card-availabilty {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .indicator{
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        .indicator {
+            width: 15px;
+            height: 15px;
+            background: #1da20496;
+            border-radius: 100%;
+        }
+
+    }
+}
+
+.pos-checkout {
+    width: 35%;
+    background: @background-white;
+    height: 100vh;
+    position: relative;
+
+    .order-amount-section {
+        position: absolute;
+        padding: 10px 15px 15px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #f7f5ff;
+
+        .cart-discount-btn {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            left: 0;
+
+            .MuiButton-outlined {
+                flex: 1;
+                border: 2px solid rgb(3, 175, 206);
+                color: rgb(3, 175, 206);
+
+                .MuiSvgIcon-root {
+                    padding-right: 5px;
+                    color: #03afce;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .MuiAppBar-positionStatic {
+        box-shadow: none;
+    }
+
+    .MuiButtonBase-root {
+        position: unset;
+    }
+
+    .MuiTabs-root {
+        height: 70px;
+        min-height: 70px;
+        background-color: #03afce;
+
+        .MuiTab-textColorPrimary {
+            color: #fff;
+        }
+
+        .MuiTab-fullWidth {
+            min-height: 70px;
+            border-right: solid 2px #fff;
+        }
+
+        .MuiTab-fullWidth:last-child {
+            border-right: 0;
+        }
+    }
+
+    .btnprimary {
+        padding: 0.8em 3em;
+        text-decoration: none;
+        height: 64px;
+        background: #668ad8;
+        color: #FFF;
+        border-bottom: solid 4px #627295;
+        border-radius: 3px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+        transition: ease .25s;
+    }
+
+    .btnprimary:hover {
+        background: #3e6ed8;
+        -ms-transform: translateY(4px);
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        /*Move down*/
+        box-shadow: none;
+        border-bottom: 0;
+    }
+
+    .btnsecondary {
+        padding: 0.8em 3em;
+        text-decoration: none;
+        height: 64px;
+        background: #204f5f;
+        color: #FFF;
+        border-bottom: solid 4px #123642;
+        border-radius: 3px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+        transition: ease .25s;
+
+    }
+
+    .btnsecondary:hover {
+        background: #28748e;
+        -ms-transform: translateY(4px);
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        /*Move down*/
+        box-shadow: none;
+        border-bottom: 0;
+    }
+
+    .MuiTab-textColorPrimary.MuiTab-selected {
+        color: #fff;
+        background: #267b8a;
+    }
+
+    .MuiPrivateTabIndicator-colorPrimary {
+        display: none;
+    }
+
+    .pos-header {
+        width: 100%;
+        height: 60px;
+        background: @background;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        .checkout-tabs {
+            display: flex;
+            height: 60px;
+
+            .each-tab {
+                flex: 1;
+                margin: 0 auto;
+                align-self: center;
+                text-align: center;
+                border-right: 1px solid black;
+            }
+        }
+    }
+
+
+
+    .button-section {
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .MuiTypography-root {
+        padding: 0 !important;
+    }
+
+    .orders-section {
+        position: relative;
+        height: calc(100vh - 71px);
+
+        .cart-items {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3em;
+            padding: 15px;
+            align-items: center;
+
+        }
+
+        .items-section {
+            overflow-y: auto;
+            padding: 15px;
+
+            .each-checkout-item {
+                .each-product-des {
+                    padding: 0;
+
+                    .des-first-part {
+                        width: 70%;
+                    }
+
+                    .each-item-qty {
+                        top: 5px;
+                        right: 5px;
+                        padding: 0px;
+                        width: 20px;
+                        height: 20px;
+                        background: #03afce;
+                        color: #ffffff;
+                        border-radius: 11px;
+                        font-weight: bold;
+                        font-size: 0.85em;
+                        text-align: center;
+                    }
+
+                    .each-item-discount {
+                        width: 10px;
+                        height: 10px;
+                        background: #ff7575;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: 10px 0 0 0;
+                    }
+
+                    .title {
+                        font-size: 1.1em;
+                        color: @soft-text;
+                        padding-left: 20px;
+                    }
+
+                    .title-label {
+                        font-size: 0.7em;
+                        color: @softer-text;
+                        padding-left: 20px;
+                    }
+
+                    .each-product-price {
+                        font-size: 1.2em;
+                        color: @soft-text;
+                    }
+
+                    .each-product-reg-price {
+                        font-size: 0.75em;
+                        color: @softer-text;
+                    }
+                }
+
+                .quantity {
+                    font-size: 1.4em;
+                    padding: 0 10px;
+                }
+
+                .expanded-options {
+                    .option-title {
+                        font-size: 0.8em;
+                        color: @soft-text;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .calculation-section {
+        //border-top: 1px solid @soft-text;
+        border-bottom: 1px solid @soft-text;
+
+        .calc-first-part {
+            padding: 10px;
+            width: 50%;
+            position: relative;
+
+            .cart-details {
+                align-self: flex-end;
+                width: 100%;
+
+                .cart-each-details {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 3px 0;
+
+                    .cart-title {
+                        width: 50%;
+                        font-size: 0.8em;
+                        color: @soft-text;
+                    }
+
+                    .cart-amount {
+                        font-size: 0.9em;
+                        color: @soft-text;
+                    }
+                }
+            }
+        }
+
+        .calc-second-part {
+            margin: 10px;
+            padding-left: 15px;
+            width: 50%;
+            border-left: 1px solid @soft-text;
+
+            .cart-details {
+                align-self: flex-end;
+                width: 100%;
+
+                .cart-each-details {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 3px 0;
+
+                    .cart-title {
+                        width: 50%;
+                        font-size: 0.9em;
+                        color: @soft-text;
+                    }
+
+                    .cart-amount {
+                        font-size: 0.9em;
+                        color: @soft-text;
+                    }
+                }
+            }
+
+            .cart-total {
+                align-self: flex-end;
+                font-weight: bold;
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+
+                .total-text {
+                    font-size: 1.4em;
+                    width: 50%;
+                    color: @soft-text;
+                }
+
+                .total-amount {
+                    font-size: 1.5em;
+                    color: @soft-text;
+                }
+            }
+        }
+    }
+
+    .customer-section {
+        position: relative;
+        height: calc(100vh - 71px);
+
+        .order-amount-section {
+            position: absolute;
+            padding: 10px 15px 15px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #f7f5ff;
+        }
+
+        .MuiTabs-root {
+            height: 70px;
+            min-height: 70px;
+
+            .MuiTab-fullWidth {
+                min-height: 70px;
+                border-right: solid 2px #fff;
+            }
+
+            .MuiTab-fullWidth:last-child {
+                border-right: 0;
+            }
+        }
+
+        .customer-main {
+            padding: 20px;
+
+            .search-section {
+                .add-customer {
+                    width: 10%;
+                    font-size: 2em;
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+            }
+
+            .customer-info {
+                margin: 20px 0;
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1;
+
+                .each-info {
+                    padding: 5px 13px;
+                    margin-right: 5%;
+                    width: 90%;
+                    border-right: 1px solid rgba(0, 0, 0, 0.1);
+                    background: #f5f6ff;
+
+                    .info-title {
+                        color: @softer-text;
+                        font-size: 0.9em;
+                    }
+
+                    .info-data {
+                        color: @soft-text;
+                    }
+                }
+            }
+
+            .customer-billing-info {
+                .each-info {
+                    padding: 10px 0;
+                    margin-right: 10%;
+
+                    .info-title {
+                        color: @softer-text;
+                        font-size: 0.9em;
+                    }
+
+                    .info-data {
+                        color: @soft-text;
+                    }
+                }
+            }
+        }
+    }
+
+    .customer-summary {
+        padding: 20px 0;
+
+        .customer-icon {
+            width: 20%;
+        }
+
+        .customer-basic-info {
+            width: 90%;
+        }
+
+        .add-customer {
+            width: 10%;
+        }
+
+        .customer-name {
+            padding: 5px 10px;
+        }
+
+        .customer-phone {
+            padding: 5px 10px;
+        }
+
+        .customer-email {
+            padding: 5px 10px;
+        }
+
+        .card-title {
+            font-size: 0.8em;
+            color: @softer-text;
+        }
+
+        .card-data {
+            font-size: 1.1em;
+        }
+
+    }
+
+    .pay-button {
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        font-size: 1.2em;
+        color: rgba(0, 0, 0, 0.8);
+        width: 9%;
+        border-radius: 5px;
+        left: 83%;
+        bottom: 8px;
+        margin: 0 10px;
+        height: 50%;
+    }
+
+
+    // ! Old Payment tab, to be removed
+    // .payment-section {
+    //     background: @background-white;
+
+    //     .section-heading {
+    //         font-size: 1.4em;
+    //         color: @soft-text;
+    //         padding: 10px;
+
+    //     }
+
+    //     .card {
+    //         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    //         background: #f4fcff;
+    //         min-height: 50px;
+    //         width: 90%;
+    //         align-self: center;
+    //         margin: 10px 0;
+    //         padding: 10px;
+    //         border-radius: 5px;
+    //     }
+    //     .payment-summary {
+    //         padding: 20px 0;
+
+    //         .summary-area {
+    //             justify-content: space-between;
+
+    //             .each-detail {
+    //                 width: 25%;
+    //             }
+
+    //             .summary-money {
+    //                 font-size: 1.2em;
+    //                 color: @soft-text;
+    //             }
+    //         }
+
+    //         .total-area {
+    //             justify-content: flex-end;
+    //             align-items: flex-end;
+    //             padding: 15px;
+
+    //             .payment-total {
+    //                 font-size: 2em;
+    //             }
+    //         }
+
+    //         .summary-title {
+    //             font-size: 0.8em;
+    //             color: @softer-text;
+    //             padding: 10px 0 3px 0;
+    //         }
+    //     }
+    // }
+
+        .payment-section{
+            height: calc(100vh - 74px);
+            border-right: solid 2px #c3c3c3;
+            .customer-section{
+                height: 15%;
+                border-bottom: 2px solid #c3c3c3;
+                .customer-display{
+                    width: 65%;
+                    margin: 0 10px;
+                    .customer-name{
+                        font-size: 1.1em;
+                        color: rgba(0,0,0,0.6);
+                        font-weight: bold;
+                    }
+                    .customer-email{
+                        font-size: 0.8em;
+                        color: rgba(0,0,0,0.6);
+                    }
+                    .customer-phone{
+                        font-size: 0.8em;
+                        color: rgba(0,0,0,0.6);
+                    }
+                }
+                .action-icons{
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .icon-width{
+                    width: 15%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            
+            .cart-section{
+                height: 70%;
+                overflow-x: auto;
+                background: #f9f9f9;
+                .each-cart-item{
+                    width: 90%;
+                    padding: 20px 5%;
+                    border-bottom: 1px solid #c3c3c3;
+                    background: #fff;
+                    .image-container{
+                        width: 15%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .product-name{
+                        width: 35%;
+                        font-size: 0.9em;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+                    .product-deductions{
+                        width: 10%;
+                        .product-cost-price{
+                        
+                            font-size: 0.9em;
+                            color: rgba(0, 0, 0, 0.7);
+                        }
+                        .product-discount{
+                            font-size: 0.9em;
+                            color: #62a212
+                        }
+                        .product-tax{
+                            font-size: 0.9em;
+                            color: #a21212
+                        }
+                    }
+                    .product-final-price{
+                        width: 20%;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+
+                }
+            }
+
+            .cart-total{
+                height: 8%;
+                border-top: 2px solid #c3c3c3;
+                justify-content: flex-end;
+                padding: 4%;
+                .cart-total-amount{
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+            }
+
+            .calculation-section{
+                border-top: 1px solid #000;
+            }
+        }
+
+
+
+}
+
+.card-payment-dialogue {
+    min-height: 40vh;
+    display: flex;
+    background: @primary;
+    color: @primary-text;
+    justify-content: center;
+    align-content: center;
+
+    .error-section {
+        padding: 20px;
+        justify-content: space-between;
+
+        .error-title {
+            font-size: 2.5em;
+            color: red;
+        }
+
+        .error-message {
+            font-size: 0.8em;
+            text-align: justify;
+            padding-top: 10px;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: flex-end;
+
+            .action {
+                margin: 10px;
+            }
+        }
+    }
+
+    .processing-text {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .success-text {
+        font-size: 2em;
+    }
+}
+
+/* On Hold Dialogue */
+.on-hold-section {
+    background: @background;
+    height: 100%;
+
+    .on-hold-header {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        background: @primary-d;
+        color: @primary-text;
+        font-size: 1.3em;
+    }
+
+    .card {
+        background: @background-white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        min-height: 50px;
+        padding: 20px;
+        width: 20%;
+
+        .card-title {
+            font-size: 1.2em;
+            color: @soft-text;
+        }
+
+        .des {
+            padding: 5px;
+
+        }
+
+        .des-title {
+            font-size: 0.8em;
+            color: @softer-text;
+            padding: 10px 0 3px 0;
+        }
+    }
+}
+
+/* Discount Dialogue */
+// ! Need to change the keypad UI
+.discount-keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.discount-keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    margin: 5px 7px;
+    padding: 20px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.discount-keys-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 13px;
+    border: 1px solid #000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pos-payment {
+    .submit-transaction .MuiButton-contained.MuiButton-disabled {
+        opacity: .2;
+        background-color: #2ea96c;
+        color: #fff;
+    }
+
+    .submit-transaction .MuiButton-containedPrimary {
+        padding: 20px;
+        font-size: 1.2rem;
+        background-color: #2ea96c;
+    }
+
+    .payment-method {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        flex: 1;
+
+        li {
+
+            margin: 2px;
+            border-bottom: solid 3px #8dc4de;
+            height: 70px;
+            line-height: 18px;
+            text-align: center;
+            background: #beeaff;
+            position: relative;
+            box-sizing: border-box;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            padding-left: 7%;
+            justify-content: space-around;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .cash-method:before {
+            content: "";
+            background: url(../images/cash-payment.png) no-repeat;
+            background-size: contain;
+            width: 73px;
+            height: 55px;
+            left: 17%;
+            position: absolute;
+        }
+
+        .card-method:before {
+            content: "";
+            background: url(../images/card-payment.png) no-repeat;
+            background-size: contain;
+            width: 59px;
+            height: 48px;
+            left: 6%;
+            position: absolute;
+
+        }
+
+        .employee-section:before {
+            content: "";
+            background: url(../images/employee.png) no-repeat;
+            background-size: contain;
+            width: 65px;
+            height: 46px;
+            left: 13%;
+            position: absolute;
+
+        }
+
+        .giftcard-section:before {
+            content: "";
+            background: url(../images/gift-card.png) no-repeat;
+            background-size: contain;
+            width: 63px;
+            height: 43px;
+            left: 12%;
+            position: absolute;
+
+        }
+
+        .freedompay:before {
+            content: "";
+            background: url(../images/freedompay.png) no-repeat;
+            background-size: contain;
+            width: 61px;
+            height: 45px;
+            left: 12%;
+            position: absolute;
+
+        }
+
+
+    }
+
+    .card {
+        background: @background-white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        min-height: 50px;
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .soft-text {
+        color: rgba(0, 0, 0, 0.7)
+    }
+
+    .payment-card {
+        .each-payment-method {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 25%;
+            min-height: 120px;
+            border: 2px solid @softer-text;
+            margin: 20px 10px 10px 10px;
+            font-weight: bold;
+        }
+    }
+
+    .gift-card {
+        min-height: 100px;
+    }
+
+    .transaction-card {
+        width: 60%;
+        min-height: calc(100vh - 138px);
+        overflow: auto;
+
+        .default-card-pay {
+            margin-top: 20px;
+
+            .pay-button {
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                font-size: 1.2em;
+                color: rgba(0, 0, 0, 0.8);
+                width: 9%;
+                height: 69%;
+                border-radius: 5px;
+                position: absolute;
+                left: 83%;
+                bottom: 8px;
+            }
+
+            .payment-title {
+                font-size: 1.1em;
+                color: @soft-text;
+            }
+        }
+    }
+
+    .numpad-section {
+        width: 40%;
+        margin: 0 0 10px 0;
+
+        .numpad-card {
+            background: @primary;
+            color: @primary-text;
+
+            .key {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 65px;
+                border-radius: 15px;
+                border: 2px solid rgba(255, 255, 255, 0.8);
+                font-size: 1.3em;
+            }
+
+            .big-key {
+                width: 59%;
+                margin: 1%;
+            }
+
+            .small-key {
+                width: 28%;
+                margin: 1%;
+            }
+        }
+    }
+}
+
+.session-section {
+    background: @background;
+    height: 100%;
+
+    .session-header {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        background: @primary-d;
+        color: @primary-text;
+        font-size: 1.3em;
+    }
+
+
+}
+
+.session {
+    background: @background-white;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    min-height: 50px;
+    padding: 15px 5px;
+    width: 100%;
+    cursor: pointer;
+
+    .first-row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .second-row {
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px 0px 0px 45px;
+    }
+
+
+    .open-tag {
+        padding: 2px 10px;
+        color: white;
+        background-color: green;
+        border-radius: 2px;
+    }
+}
+
+.session-date {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.session:hover {
+    background-color: #3f51b5;
+    color: white;
+
+    .open-tag {
+        background-color: rgb(14, 240, 228);
+    }
+}
+
+// style for session details
+
+.secondary-color {
+    color: #777;
+    font-weight: bold;
+}
+
+.tertiary-color {
+    background-color: @background-white;
+    color: #666;
+}
+
+.primary-color {
+    color: blue;
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.date-header {
+    text-align: center;
+    box-shadow: 0px 4px 4px #d8d8d8;
+    padding: 2%;
+    font-size: 120%;
+    margin-bottom: 2%;
+}
+
+.staff-row {
+    padding: 0.2% 2%;
+}
+
+.pos-row {
+    padding: 1% 2% 2% 2%;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.opening-bal-row,
+.trans-row-1 {
+    padding: 1% 2% 1% 2%;
+
+}
+
+.real-closing-bal,
+.difference {
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 1.5%;
+}
+
+.trans-row-2 {
+    padding: 0 2% 0.8% 2%;
+}
+
+.closing-bal {
+    padding: 0% 2% 2% 2%;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.cash-payment-row {
+    padding: 2%;
+}
+
+.print-row {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.printBtn,
+.endBtn {
+    width: 100%;
+}
+
+//style for history section
+
+
+.active {
+    background: skyblue;
+}
+
+//This is style for session container
+.session-parent {
+
+    //margin:10px 10px;
+    .session-header {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        background: @primary-d;
+        color: @primary-text;
+        font-size: 1.3em;
+    }
+
+    .session-button-style {
+        position: absolute;
+        bottom: 30px
+    }
+
+    .mui-table {
+        tr {
+            td {
+                padding: 1px 10px;
+            }
+        }
+    }
+
+    .mui-row {
+        display: flex;
+    }
+
+    .card-title {
+        font-size: 1.4em;
+    }
+
+    .card {
+        background: @background-white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        min-height: 50px;
+        padding: 20px;
+    }
+
+    .numpad-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .middle {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .numpad-card {
+        background: @primary-d;
+        color: @primary-text;
+
+        .key {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+        }
+
+        .big-key {
+            width: 59%;
+            margin: 1%;
+        }
+
+        .small-key {
+            width: 28%;
+            margin: 1%;
+
+        }
+    }
+}
+
+.pop-img {
+    border-right: solid 1px #DDD;
+    padding: 0 40px;
+}
+
+.pop-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.offline-transaction {
+    .section-heading {
+        font-size: 1.4em;
+        color: @soft-text;
+        padding: 10px;
+
+    }
+
+    .payment-summary {
+        padding: 20px 0;
+        .summary-area {
+            justify-content: space-between;
+
+            .each-detail {
+                display: flex;
+                justify-content: space-between;
+            }
+            .summary-money {
+                font-size: 1.2em;
+                color: @soft-text;
+            }
+        }
+
+    }
+}
+
+// quickbook-icon
+.accounting-images {
+    border: 1px solid #80808040;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.accounting-images:hover {
+    border: 1px solid #313787;
+    border-radius: 10px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.header-20px-600 {
+    color: #313787;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.screening-box {
+    border: 1px solid #80808040;
+    padding: 20px;
+    min-width: 250px;
+    height: 150px;
+}
+
+.screening-rating {
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+//-----------------------------
+// .MuiBadge-badge {
+//     width: 25px !important;
+//     height: 25px !important;
+//     font-size: 1rem !important;
+// }
+.MuiBadge-colorSecondary {
+    background-color: #66cf47 !important;
+}
+
+//--------------------------------
+.screening-verification-icon {
+    background: #66cf47;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+// Accounting Balancesheet
+.total-row {
+    padding-top: 5px;
+    //border-top: solid 1px #d4d4d4;
+    font-family: 'Karla', sans-serif !important;
+    /* background-color: white; */
+    color: rgba(0, 0, 0, .8);
+    font-size: .9rem;
+}
+
+.balancesheet-subHeading {
+    font-weight: 500;
+    font-family: 'Karla', sans-serif !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.balancesheet-sub-data-color {
+    color: rgba(0, 0, 0, .6);
+}
+
+.balanceSheet-heading {
+    color: #313787;
+    font-weight: 600;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 5px;
+}
+
+.balancesheet-row-block {
+    background: #e9ecef54;
+    margin: 10px;
+    padding: 20px;
+}
+
+// for Esignature
+.sign-image {
+    font-family: 'Karla', sans-serif !important;
+    font-size: 4.5rem;
+    padding: 30px;
+    background: #fafafa;
+    width: 100%;
+    display: inline-block;
+    border: solid 2px #DDD;
+    max-width: 100%;
+    min-width: 380px;
+    text-align: center;
+}
+
+.column_financial {
+    min-width: 20%;
+    width: 20%;
+    padding-top: 6px;
+    //padding:5px 10px;
+}
+
+.column_financial-sub-head {
+    min-width: 300px;
+    width: 250px;
+    flex: 1;
+    padding-top: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.financial-data-block {
+    width: 1500px;
+    overflow: auto;
+}
+
+.financial-total-block {
+    border-top: solid 1px #d4d4d4;
+}
+
+.financial-data-head-column {
+    background: #f9f9f9;
+    padding: 0 0 0 15px;
+}
+
+.float-right {
+    float: right;
+}
+
+.yodlee-row-block {
+    background: #dddddd36;
+    padding: 15px;
+    margin: 0px 10px;
+}
+
+.product-details-modal {
+
+    .each-card-name {
+        font-size: 1.3rem;
+    }
+
+    .each-card-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .pro-description {
+        font-size: .8rem;
+        line-height: .9rem;
+    }
+
+    .expanded-options {
+        align-items: center;
+        margin: 10px 0;
+        width: 85%;
+
+        .qty-block {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+
+    .qty-btn {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        width: 110px;
+        height: 44px;
+    }
+
+    .quantity {
+        font-size: 1.2rem;
+        width: 30px;
+        text-align: center;
+    }
+}
+
+.lock-terminal {
+
+    .MuiDialogContent-root {
+        background: @primary;
+        color: @primary-text;
+    }
+
+    .card-title {
+        font-size: 1.4em;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        border-radius: 100px;
+        margin: 20px 10px;
+    }
+
+    .filled {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .numpad-card {
+        background: @primary;
+        color: @primary-text;
+
+        .key {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            font-size: 1.45em;
+        }
+
+        .big-key {
+            width: 59%;
+            margin: 1%;
+        }
+
+        .small-key {
+            width: 28%;
+            margin: 1%;
+        }
+    }
+}
+
+.order-history-block {
+
+    overflow-y: auto;
+    height: 90vh;
+
+    .history-card-head {
+        padding: 10px;
+        background: #f7f7f7;
+        margin-bottom: 10px;
+    }
+
+    .c-name {
+        font-size: 1.2rem
+    }
+
+    .c-amount {
+        font-size: 1.2rem
+    }
+}
+
+
+//
+.z-report-dialog {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.button-print-z {
+    position: absolute;
+    z-index: 10000;
+    bottom: 6px;
+    left: 428px;
+}
+
+/* History Dialogue */
+
+.history-section {
+    height: 100vh;
+    background: @background;
+
+    .history-sidebar {
+        width: 25%;
+        height: calc(100vh - 90px);
+        border-right: 1px solid black;
+        padding: 20px;
+        background: @background-l;
+
+        .history-search {
+            min-height: 50px;
+        }
+
+        .transaction-list {
+
+            .history-card-head {
+                padding: 10px;
+                background: rgba(193, 191, 191, 0.6);
+                margin-bottom: 10px;
+            }
+        }
+
+        .card {
+            margin: 10px 0;
+        }
+    }
+
+    .order-summary-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .order-summary-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .history-main {
+        width: 70%;
+        padding: 20px;
+        height: calc(100vh - 90px);
+        overflow-x: hidden;
+
+        .history-order-details {
+            width: 96%;
+            overflow-y: auto;
+            height: auto;
+            flex: 0 0 96%;
+            display: flex;
+            flex-direction: column;
+            max-height: 200px;
+            overflow-x: hidden;
+        }
+
+        .card {
+            margin: 10px 10px;
+        }
+
+        .order-action-section {
+            height: calc(15vh - 20px);
+            margin: 10px;
+            margin-top: -30px;
+
+            .action-btn {
+                background-color: #0f8fad;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                color: rgba(255, 255, 255, 1);
+                padding: 10px 30px;
+                font-size: 0.9rem;
+                margin: 5px;
+                height: 30px;
+            }
+        }
+    }
+
+    .order-summary-section {
+        width: 40%;
+        height: 60vh;
+
+        .order-summary {
+            height: auto;
+            overflow-y: auto;
+        }
+
+        .summary-key {
+            font-size: 0.9em;
+            color: @softer-text;
+        }
+
+        .summary-value {
+            font-size: 1em;
+            color: @soft-text;
+        }
+    }
+
+    .refund-history-section {
+        width: 58%;
+
+        .refund-detail-section {
+            margin: 10px;
+
+            .MuiPaper-elevation1 {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .history-header {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        background: @primary-d;
+        color: @primary-text;
+        font-size: 1.3em;
+    }
+
+    .card {
+        background: @background-white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: @softer-text;
+        }
+
+        .des {
+            padding: 5px;
+
+        }
+
+        .des-title {
+            font-size: 0.8em;
+            color: @softer-text;
+            padding: 10px 0 3px 0;
+        }
+    }
+
+    .title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: @softer-text;
+        padding-bottom: 10px;
+    }
+
+    .card-active {
+        background: #d3e1e6;
+    }
+}
+
+.refund-dialogue {
+    min-height: 80vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-title {
+        font-size: 1.3em;
+        color: @softer-text;
+        font-weight: bold;
+    }
+
+    .refund-step-1 {
+        height: 80%;
+
+        .refund-items {}
+
+        .table-text {
+            font-size: 1.2em
+        }
+    }
+
+    .refund-step-2 {
+        .title {
+            min-height: 50px;
+            justify-content: center;
+            margin: 2px;
+            height: 70px;
+            line-height: 18px;
+            background: @primary;
+            color: @primary-text;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: space-around;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            padding: 0 5px;
+
+        }
+
+        .refund-method-btn {
+            min-height: 50px;
+            justify-content: center;
+            margin: 2px;
+            border-bottom: solid 3px #8dc4de;
+            height: 70px;
+            line-height: 18px;
+            text-align: center;
+            background: #beeaff;
+            position: relative;
+            box-sizing: border-box;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: space-around;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .info-title {
+            font-size: 0.9em;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .info-value {
+            font-size: 1.2em;
+            color: rgba(0, 0, 0, 0.8);
+            word-break: break-word;
+        }
+
+        .payment-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6)
+        }
+    }
+
+    .refund-action-section {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        height: 20%;
+
+        .action-btn {
+            width: 10%;
+            background-color: #0f8fad;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            color: rgba(255, 255, 255, 1);
+            padding: 10px 30px;
+            font-size: 0.9rem;
+            margin: 5px;
+        }
+
+    }
+
+}
+
+.hot-icon {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 5px;
+    border: 2px solid rgba(0,0,0,0.6);
+    border-radius: 10px;
+    .hot-text{
+        font-size: 0.8em;
+        color: rgba(0,0,0,0.6);
+        font-weight: bold;
+    }
+}
+
+
+// ***** CANNABIS STYLES ***** //
+
+/* Customer Dialogue - Check-In and Queue */
+
+.customer-dialogue-section{
+    background: @background;
+    height: 100%;
+    .card {
+        background: @background-white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        min-height: 50px;
+        padding: 20px;
+        .card-title {
+            font-size: 1.2em;
+            color: @soft-text;
+        }
+        .des {
+            padding: 5px;
+        }
+        .des-title {
+            font-size: 0.8em;
+            color: @softer-text;
+            padding: 10px 0 3px 0;
+        }
+        .status-code{
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background: rgb(255, 142, 142);
+            border-radius: 5px 0;
+        }
+    }
+    .card-active{
+        background: rgba(138, 138, 255, 0.26);
+    }
+    .heading{
+        font-size: 2em;
+        font-weight: bold;
+        color: rgba(0, 0, 0, .7);
+    }
+    .sub-heading{
+        font-size: 1.3em;
+        font-weight: bold;
+        color: rgba(0, 0, 0, .7);
+    }
+    .customer-header{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        background: @primary-d;
+        color: @primary-text;
+        font-size: 1.3em;
+    }
+    .customer-main{
+        .check-in-area{
+            width: 35%;
+            height: calc(100vh - 94px);
+            padding: 20px;
+            background: #fff;
+            border-right: 2px solid #c3c3c3;
+            .previous-search{
+                margin: 20px 0;
+                .MuiFormControl-root{
+                    width: 100%;
+                }
+            }
+            .add-new-area{
+                margin: 20px 0;
+                background: @background;
+                overflow-x: auto;
+                .checkbox-style{
+                    width: 48%;
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+                    span{
+                        font-size: 0.8em;
+                        color: rgba(0, 0, 0, .7);
+                    }
+                }
+
+                .med-customer-form{
+                    border-top: 1px solid black;
+                }
+
+
+            }
+        }
+
+        .queue-area{
+            height: calc(100vh - 94px);
+            padding: 20px;
+        }
+
+        .customer-info-area{
+            height: calc(100vh - 94px);
+            padding: 20px;
+            background: #fff;
+            border-left: 2px solid #c3c3c3;
+            width: 25%;
+            .info-heading{
+                font-size: 0.8em;
+                color: rgba(0, 0, 0, .6)
+            }
+            .info-value{
+                font-size: 1.1em;
+                color: rgba(0, 0, 0, .8);
+                word-break: break-word;
+            }
+            .customer-action{
+
+            }
+        }
+
+
+
+
+    }
+}
+
+
+/* Cannabis Customer Tab */
+.customer-section{
+    .cannabis-customer-main{
+        .cannabis-selected-customer{
+            width: 40%;
+            .cannabis-heading{
+                font-size: 0.8em;
+                color: rgba(0, 0, 0, .6);
+            }
+            .cannabis-value{
+                font-size: 1em;
+                color: rgba(0, 0, 0, .7);
+            }
+        }
+        .no-customer-selected{
+            margin: auto 20px;
+            .select-new-customer-text{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.5);
+                padding-bottom: 30px;
+                text-align: center;
+                line-height: 1.2em;
+            }
+        }
+    }
+}
